@@ -29,6 +29,45 @@ Within HAAG, several procedures related to progress tracking are already in plac
 Although blockers are already reported within weekly submissions, there is currently no standardized mechanism ensuring repeated blockers trigger structured follow-up.
 
 ---
+## How the Escalation Process Will Work
+
+This protocol does **not** require technical modifications to the existing Slack bot. The bot will continue surfacing blocker sections as part of its weekly summary. Escalation decisions will rely on structured human review by PM or advisor.
+
+### 1. Weekly Blocker Visibility
+
+- Students continue reporting blockers in their weekly reports.
+- The Slack bot summarizes and surfaces all reported blockers in the project channel.
+- The advisor reviews the weekly summary as part of the existing workflow.
+
+### 2. Repeated Blocker Recognition
+
+After reviewing the weekly summary, the advisor (or designated reviewer i.e. PM) asks:
+
+> Does any blocker appear to be recurring from the previous week?
+
+No automated matching is required. Recognition is based on human judgment and contextual awareness.
+
+### 3. Week 2 Escalation Rule
+
+If a blocker appears to persist into a second consecutive week:
+
+- It must be explicitly discussed in the next team meeting.
+- The root cause is clarified.
+- A concrete next step or resolution plan is identified.
+
+### 4. Week 3 Intervention
+
+If a blocker persists into a third consecutive week:
+
+- Advisor-level intervention is required.
+- Additional support, dependency resolution, or restructuring may be considered.
+- A clear action plan is documented.
+
+### 5. Lightweight Tracking (Pilot Phase)
+
+During the pilot period, recurring blockers may be logged manually for evaluation purposes in the project operations log. This tracking is observational and does not introduce additional reporting requirements for students.
+
+---
 
 ## Discovery and Information Gathering
 
