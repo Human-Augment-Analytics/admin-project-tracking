@@ -177,15 +177,35 @@ Future versions may incorporate LLM-based summarization.
 
 ---
 
+### 6. Automated Progress Tracking Bot
+
+The HAAG tracking ecosystem utilizes an automation bot from the [Progress-Tracker](https://github.com/Human-Augment-Analytics/Progress-Tracker/) repository to monitor research progression across HAAG projects. 
+
+This bot provides unified and automated visibility into technical objectives by:
+* Tracking **GitHub milestones** to measure high-level research project progress across the group.
+* Tracing **GitHub issues** to monitor individual task completion and progress.
+* Running entirely via **GitHub Actions on a cron schedule** to automatically fetch metrics, requiring no dedicated server or maintenance overhead.
+
+These metrics are available via the centralized [HAAG Project Tracker dashboard](https://human-augment-analytics.github.io/Progress-Tracker/), and the bot can be configured to report updates directly into project-specific Slack channels, complementing weekly student reports.
+
+**For HAAG Leadership:**
+The automated tracking system allows HAAG Leadership to maintain a high-level view of all ongoing HAAG initiatives without micromanaging individual teams. By reviewing the centralized dashboard, managers can quickly identify bottlenecks, assess resource allocation across different milestones, and ensure technical objectives align with overarching research goals before weekly advisor check-ins.
+
+**For Project Managers:**
+Project Managers can utilize the bot to track individual team progress at a granular level. By collaborating with Computational Advisors, they can establish clear project roadmaps and define specific GitHub milestones and issues that tie directly to a researcher's codebase and weekly deliverables. This ensures that every task contributes measurably to the project's milestones and provides an objective metric for evaluating researcher progress.
+
+---
+
 ## Roles and Responsibilities
 
-| Role          | Responsibility                              |
-| ------------- | ------------------------------------------- |
-| Student       | Submit weekly report                        |
-| Advisor       | Review reports and submit weekly evaluation |
-| Slack Bot     | Summarize reports                           |
-| HAAG Director | Monitor progress and intervene              |
-| System        | Send automated notifications                |
+| Role               | Responsibility                                                                                       |
+| ------------------ | ---------------------------------------------------------------------------------------------------- |
+| Student            | Submit weekly report and update assigned GitHub issues                                               |
+| Advisor            | Review reports and submit weekly evaluation                                                          |
+| Project Manager    | Track individual team progress, map tasks to code, and define roadmaps with Computational Advisors |
+| Slack Bot          | Summarize reports                                                                                    |
+| HAAG Leadership    | Maintain high-level view via dashboard, allocate resources, and intervene                            |
+| System             | Send automated notifications                                                                         |
 
 ---
 
