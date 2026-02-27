@@ -444,55 +444,63 @@ By repositioning WordPress as a lightweight portal layer and GitHub as the docum
 #### System architecture flow diagram:
 ```mermaid
 flowchart TB
-  %% =========================
-  %% HAAG Public Web Presence
-  %% Proposed Sustainable Architecture
-  %% =========================
 
-  %% ---- External audiences ----
+  %% =========================
+  %% External Audiences
+  %% =========================
   subgraph AUD[External Audiences]
     V[Visitors / Public]
     P[Prospective Collaborators]
     M[Media / Partners]
   end
 
-  %% ---- HAAG internal roles ----
-  subgraph ROLES[HAAG Roles & Responsibilities]
+  %% =========================
+  %% HAAG Roles
+  %% =========================
+  subgraph ROLES[HAAG Roles]
     PL[Project Leads]
     RS[Researchers]
-    PS[Publications Steward\n(semesterly update)]
-    WA[Website Admin / Maintainer\n(lightweight quarterly audit)]
+    PS[Publications Steward - Semester Update]
+    WA[Website Admin - Quarterly Audit]
   end
 
-  %% ---- Source of truth (GitHub) ----
-  subgraph GH[GitHub (Source of Truth)]
-    ORG[HAAG GitHub Org / Landing Repo\nREADME + Index of Projects]
-    PROJ[Project Repositories\nREADME, docs/, milestones, artifacts]
-    PUB[Publications Repo\nBibTeX / CSL JSON / curated list]
-    ACTIONS[GitHub Actions (Optional)\nGenerate summaries, badges, feeds]
-    PAGES[GitHub Pages (Optional)\nStatic project sites/docs]
+  %% =========================
+  %% GitHub - Source of Truth
+  %% =========================
+  subgraph GH[GitHub - Source of Truth]
+    ORG[HAAG GitHub Organization Page]
+    PROJ[Project Repositories with README and Docs]
+    PUB[Publications Repository]
+    ACTIONS[GitHub Actions - Optional Automation]
+    PAGES[GitHub Pages - Optional Static Docs]
   end
 
-  %% ---- WordPress portal layer ----
-  subgraph WP[Georgia Tech WordPress (Portal Layer)]
-    HOME[Front Page\nMission + Highlights + Calls-to-Action]
-    PROJECTS[Projects Hub Page\nLinks to GitHub repos + tags]
-    BLOG[Community Blog\nCurated highlights (optional)]
-    SEM[Seminars / Events\nAnnouncements + archives]
-    PROGRAMS[Programs Pages\nManagement Class, Advisors, etc.]
-    CONTACT[Contact / Intake\nForm + email routing]
-    PUBTAB[Publications Page\nRendered list (semesterly refresh)]
-    ARCH[Archive Page\nPast projects + historical links]
+  %% =========================
+  %% WordPress - Portal Layer
+  %% =========================
+  subgraph WP[Georgia Tech WordPress - Portal Layer]
+    HOME[Front Page]
+    PROJECTS[Projects Hub Page]
+    BLOG[Community Blog]
+    SEM[Seminars and Events]
+    PROGRAMS[Programs Pages]
+    CONTACT[Contact Page]
+    PUBTAB[Publications Page]
+    ARCH[Archive Page]
   end
 
-  %% ---- Optional automation / data feeds ----
-  subgraph FEEDS[Automation & Feeds (Optional)]
-    RSS[GitHub Releases/Commits Feed\nor generated RSS/JSON]
-    BADGES[Status Badges\nLast updated / build / docs]
-    SYNC[Static Summary Export\nMarkdown → HTML snippet]
+  %% =========================
+  %% Automation Feeds (Optional)
+  %% =========================
+  subgraph FEEDS[Optional Automation Layer]
+    RSS[GitHub Activity Feed]
+    BADGES[Status Badges]
+    SYNC[Static Summary Export]
   end
 
-  %% ---- User journeys ----
+  %% =========================
+  %% User Navigation
+  %% =========================
   V --> HOME
   P --> CONTACT
   M --> HOME
@@ -512,7 +520,9 @@ flowchart TB
   SEM --> ORG
   ARCH --> ORG
 
-  %% ---- Authoring / maintenance flows ----
+  %% =========================
+  %% Maintenance Flows
+  %% =========================
   RS --> PROJ
   PL --> PROJ
   PL --> ORG
@@ -525,7 +535,9 @@ flowchart TB
   WA --> PUBTAB
   WA --> ARCH
 
-  %% ---- Optional automation links ----
+  %% =========================
+  %% Optional Automation Connections
+  %% =========================
   PROJ --> ACTIONS
   PUB --> ACTIONS
   ACTIONS --> RSS
@@ -533,22 +545,10 @@ flowchart TB
   ACTIONS --> SYNC
   ACTIONS --> PAGES
 
-  %% ---- How WordPress consumes optional outputs ----
-  RSS -.embed/link.-> BLOG
-  BADGES -.embed/link.-> PROJECTS
-  SYNC -.paste/shortcode.-> HOME
-  PAGES -.link.-> PROJECTS
-
-  %% ---- Core principle annotations ----
-  classDef portal fill:#f7f7ff,stroke:#555,stroke-width:1px;
-  classDef source fill:#f0fff4,stroke:#2f6f3e,stroke-width:1px;
-  classDef opt fill:#fff8e6,stroke:#9a6b00,stroke-width:1px;
-  classDef roles fill:#f7fff7,stroke:#3a7,stroke-width:1px;
-
-  class HOME,PROJECTS,BLOG,SEM,PROGRAMS,CONTACT,PUBTAB,ARCH portal;
-  class ORG,PROJ,PUB source;
-  class ACTIONS,PAGES,RSS,BADGES,SYNC opt;
-  class PL,RS,PS,WA roles;
-  ```
+  RSS --> BLOG
+  BADGES --> PROJECTS
+  SYNC --> HOME
+  PAGES --> PROJECTS
+```
 
 ---
