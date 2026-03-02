@@ -89,9 +89,9 @@ The initiative will be tested within a small cohort during a short observation w
 
 **Phase 2: Protocol Introduction**
 * Change the Weekly check in survey in following ways:
-* Include more categories than "good", "needs improvement", and "poor"
-* Add a text box for computational advisors to write feedback or updates for each researcher (will be an optional field)
-* Add a brief mandatory text box outlining where the research group is at in terms of progress and relative to their long term goal
+  * Include more categories than "good", "needs improvement", and "poor"
+  * Add a text box for computational advisors to write feedback or updates for each researcher (will be an optional field)
+  * Add a brief mandatory text box outlining where the research group is at in terms of progress and relative to their long term goal
 
 * Have two to three computational advisors use this improved survey and ask them for feedback on the improved survey in comparison to old one
 * After updated weekly check in has been implemented, ask the HAAG leadership if there is more clarity from advisors on how well the team is doing
