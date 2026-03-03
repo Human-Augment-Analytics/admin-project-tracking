@@ -15,6 +15,10 @@ The reports are available in the **different_versions_of_reports** folder.
 
 The Time Log channel in Slack was introduced as the central hub for researcher accountability and communication. With approximately 15 researchers in HACC at the time, the channel served four primary purposes.
 
+> **Platform:** Slack — shared Time Log channel
+>
+> <img src="different_platforms/Timelog.png" alt="Slack Time Log channel" width="400">
+
 ### Weekly Check-In Posts
 
 Each researcher posted in the channel to answer three recurring questions:
@@ -120,6 +124,10 @@ No changes were made to the content of the weekly report.
 
 Reports were submitted via Basecamp, a formal project management tool, rather than through the Slack Time Log channel.
 
+> **Platform:** Basecamp
+>
+> <img src="different_platforms/Basecamp.png" alt="Basecamp" width="400">
+
 - Comp Advisors were given segmented access within Basecamp.  
 - This enabled more structured project management across research teams.
 
@@ -141,13 +149,17 @@ No changes were made to the content of the weekly report across these two semest
 
 **Fall 2025**
 
-- Researchers moved away from Basecamp.  
-- Weekly reports were submitted in individual project Slack channels rather than the shared Time Log channel.  
+- Researchers moved away from Basecamp.
+- Weekly reports were submitted in individual project Slack channels rather than the shared Time Log channel.
 - The Time Log channel continued to be used for meeting summaries.
 
 **Spring 2026**
 
-- Basecamp was fully removed.  
+- Basecamp was fully removed.
 - Researchers continued reporting within their individual project channels.
+
+> **Platform:** Slack — individual project channels
+>
+> <img src="different_platforms/SlackChannel.png" alt="Slack individual project channels" width="400">
 
 ---
