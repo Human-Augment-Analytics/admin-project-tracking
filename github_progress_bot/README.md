@@ -50,18 +50,52 @@ Metrics are available via the centralized [HAAG Project Tracker dashboard](https
 
 ## System Architecture Overview
 
-mermaid
+The system is implemented in the [Progress-Tracker](https://github.com/Human-Augment-Analytics/Progress-Tracker/) repository with the following components:
+
+| Component | File | Description |
+|-----------|------|-------------|
+| Progress Bot | `progress_bot.py` | Tracks GitHub milestones and sends reports to Slack |
+| Qualtrics Bot | `qualtrics_bot.py` | Tracks survey response rates via Qualtrics OAuth2 API |
+| Combined Bot | `advanced_progress_bot.py` | Runs both progress and survey tracking in a single report |
+| Web Dashboard | `docs/index.html` | Centralized [project tracker dashboard](https://human-augment-analytics.github.io/Progress-Tracker/) |
+| GitHub Actions | `.github/workflows/` | Cron-scheduled workflows that run the bots automatically |
+
+```mermaid
 flowchart TD
+    Student[Student Researcher]
+    CA[Computational Advisor]
+    PM[Project Manager]
+    Director[HAAG Leadership]
 
-Student[Student Researcher]
-Advisor[Advisor]
-Slack[Slack Project Channel]
-Bot[Slack Summary Bot]
-Director[HAAG Director]
-Notifications[Automated Slack Notifications]
+    subgraph Data Sources
+        GitHub[GitHub Issues & Milestones]
+        Qualtrics[Qualtrics Surveys]
+    end
 
-Student -->|Update GitHub Issues| Bot
-Bot --> Advisor
-Bot --> Director
-Director -->|Monitor Progress| Advisor
-Director -->|Intervene if Needed| Student
+    subgraph Automation
+        Actions[GitHub Actions - Cron Schedule]
+        ProgressBot[progress_bot.py]
+        QualtricsBot[qualtrics_bot.py]
+    end
+
+    subgraph Outputs
+        Slack[Slack Project Channels]
+        Dashboard[Web Dashboard]
+    end
+
+    PM -->|Define milestones & issues| GitHub
+    CA -->|Define milestones & issues| GitHub
+    Student -->|Update issues| GitHub
+    CA -->|Complete surveys| Qualtrics
+    Actions -->|Triggers| ProgressBot
+    Actions -->|Triggers| QualtricsBot
+    GitHub -->|Milestone data| ProgressBot
+    Qualtrics -->|Response data| QualtricsBot
+    ProgressBot -->|Posts reports| Slack
+    QualtricsBot -->|Posts reports| Slack
+    ProgressBot -->|Updates| Dashboard
+    Slack --> PM
+    Slack --> Director
+    Dashboard --> Director
+    Dashboard -->|High-level overview| Outsider[External Viewer]
+```
