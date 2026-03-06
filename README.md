@@ -32,6 +32,9 @@ admin-project-tracking/
 ├── website_usage/
 │   └── README.md
 │
+├── milestones_and_larger_themes/
+│   └── README.md
+│
 └── future_work_and_initiatives/
     ├── README.md
     ├── blocker_escalation_protocol_initiative.md
@@ -59,6 +62,9 @@ Stores ongoing and proposed initiatives to improve operational workflows. Curren
 - **Weekly Reporting Workflow Clarification**
 
 New initiatives may be added collaboratively with students and HAAG team members.
+
+### 6. `milestones_and_larger_themes`
+Contains documentation that organizes project progress into concrete milestones and cross-project strategic themes. This folder is intended to support planning, status communication, and alignment between day-to-day tasks and broader research goals.
 
 ---
 
