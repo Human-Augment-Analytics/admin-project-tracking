@@ -606,46 +606,51 @@ By repositioning WordPress as a lightweight portal layer and GitHub as the docum
 
 ---
 
-## Procedure flow diagram
+## Procedure flow diagrams
+
+### A. Procedure A - Project Updates
 
 ```mermaid
 flowchart TD
+  A1[Project needs public visibility] --> A2[Project lead updates required GitHub README and metadata]
+  A2 --> A3{Repository complete enough for public use?}
+  A3 -- No --> A4[Lead revises repo structure and content]
+  A4 --> A2
+  A3 -- Yes --> A5[Submit GitHub-based website intake request]
+  A5 --> A6[Admin reviews scope, links, and completeness]
+  A6 --> A7{Approved?}
+  A7 -- No --> A8[Return feedback to project lead]
+  A8 --> A2
+  A7 -- Yes --> A9[WordPress project hub links to repo or summary card]
+  A9 --> A10{Project still active?}
+  A10 -- Yes --> A11[Researchers keep GitHub updated]
+  A11 --> A9
+  A10 -- No --> A12[Lead marks project closed and adds publication/output links]
+  A12 --> A13[Archive or publications page updated]
+```
 
-  subgraph A[Procedure A - Project Updates]
-    A1[Project needs public visibility] --> A2[Project lead updates required GitHub README and metadata]
-    A2 --> A3{Repository complete enough for public use?}
-    A3 -- No --> A4[Lead revises repo structure and content]
-    A4 --> A2
-    A3 -- Yes --> A5[Submit GitHub-based website intake request]
-    A5 --> A6[Admin reviews scope, links, and completeness]
-    A6 --> A7{Approved?}
-    A7 -- No --> A8[Return feedback to project lead]
-    A8 --> A2
-    A7 -- Yes --> A9[WordPress project hub links to repo or summary card]
-    A9 --> A10{Project still active?}
-    A10 -- Yes --> A11[Researchers keep GitHub updated]
-    A11 --> A9
-    A10 -- No --> A12[Lead marks project closed and adds publication/output links]
-    A12 --> A13[Archive or publications page updated]
-  end
+### B. Procedure B - Events, Seminars, and Community Content
 
-  subgraph B[Procedure B - Events, Seminars, and Community Content]
-    B1[Faculty, advisor, or researcher wants to advertise an item] --> B2[Submit standardized GitHub-based request]
-    B2 --> B3[Admin reviews scope and required details]
-    B3 --> B4{Approved?}
-    B4 -- No --> B5[Requester revises or withdraws]
-    B5 --> B2
-    B4 -- Yes --> B6[Requester owns event setup and materials]
-    B6 --> B7[Admin or automation publishes to website and channels]
-    B7 --> B8[Post-event recap, slides, or recording added if needed]
-    B8 --> B9[Item archived after use]
-  end
+```mermaid
+flowchart TD
+  B1[Faculty, advisor, or researcher wants to advertise an item] --> B2[Submit standardized GitHub-based request]
+  B2 --> B3[Admin reviews scope and required details]
+  B3 --> B4{Approved?}
+  B4 -- No --> B5[Requester revises or withdraws]
+  B5 --> B2
+  B4 -- Yes --> B6[Requester owns event setup and materials]
+  B6 --> B7[Admin or automation publishes to website and channels]
+  B7 --> B8[Post-event recap, slides, or recording added if needed]
+  B8 --> B9[Item archived after use]
+```
 
-  subgraph C[Procedure C - Stable Website Information]
-    C1[Front page, program, contact, or publication update needed] --> C2[Owner checks whether content belongs on website or in GitHub]
-    C2 --> C3{Stable website content?}
-    C3 -- No --> C4[Point users to GitHub or maintained source instead]
-    C3 -- Yes --> C5[Admin or program owner updates WordPress]
-    C5 --> C6[Semester or quarterly audit checks accuracy and stale links]
-  end
+### C. Procedure C - Stable Website Information
+
+```mermaid
+flowchart TD
+  C1[Front page, program, contact, or publication update needed] --> C2[Owner checks whether content belongs on website or in GitHub]
+  C2 --> C3{Stable website content?}
+  C3 -- No --> C4[Point users to GitHub or maintained source instead]
+  C3 -- Yes --> C5[Admin or program owner updates WordPress]
+  C5 --> C6[Semester or quarterly audit checks accuracy and stale links]
 ```
