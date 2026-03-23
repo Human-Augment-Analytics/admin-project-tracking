@@ -54,12 +54,13 @@ Documents the structure and usage of weekly advisor surveys, including submissio
 Houses the automated progress tracking bot, which monitors GitHub milestones and issues, providing dashboards and Slack notifications for leadership and project managers.
 
 ### 4. `website_usage`
-Contains resources and documentation related to website usage metrics, monitoring workflows, and operational dashboards.
+Contains documentation on HAAG website history, governance challenges, proposed maintenance procedures, and GitHub-first website update workflows.
 
 ### 5. `future_work_and_initiatives`
 Stores ongoing and proposed initiatives to improve operational workflows. Currently includes:
 - **Structured Blocker Escalation Protocol**
 - **Weekly Reporting Workflow Clarification**
+- **GitHub-First Website Automation and Content Governance Initiative**
 
 New initiatives may be added collaboratively with students and HAAG team members.
 
