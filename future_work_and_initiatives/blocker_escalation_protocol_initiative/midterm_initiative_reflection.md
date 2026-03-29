@@ -57,12 +57,12 @@ flowchart TD
     A[Review Weekly Reports / Dashboard] --> B[Identify Blockers]
     B --> C{Is Blocker Recurring?}
 
-    C -->|No (Week 1)| D[Monitor]
+    C -->|No Week 1| D[Monitor]
     D --> Z[End]
 
     C -->|Yes| E{Second Consecutive Week?}
 
-    E -->|Yes (Week 2)| F[Flag for Team Discussion]
+    E -->|Yes Week 2| F[Flag for Team Discussion]
     F --> G[Define Root Cause & Next Steps]
     G --> H[Assign Owner]
     H --> I[Monitor]
@@ -70,7 +70,7 @@ flowchart TD
 
     E -->|No| J{Third Consecutive Week or More?}
 
-    J -->|Yes (Week 3+)| K[Escalate to Faculty]
+    J -->|Yes| K[Escalate to Faculty]
     K --> L[Define Action Plan / Provide Support]
     L --> M[Track Resolution]
     M --> Z
