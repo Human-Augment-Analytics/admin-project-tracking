@@ -12,16 +12,24 @@ It integrates existing research workflows (Slack, GitHub, weekly reports) with s
 
 ## Repository Structure
 
+## Repository Structure
+
+```text
 admin-project-tracking/
 │
 ├── README.md
 ├── weekly_reports_history/
 │   ├── README.md
-│   └── different_versions_of_reports/
-│       ├── Example_semester1_report_redacted.pdf
-│       ├── Example_semester2_report_redacted.pdf
-│       ├── Example_semester3_report_redacted.pdf
-│       └── Example_semester4_report_nochange_redacted.pdf
+│   ├── different_versions_of_reports/
+│   │   ├── Example_semester1_report_redacted.pdf
+│   │   ├── Example_semester2_report_redacted.pdf
+│   │   ├── Example_semester3_report_redacted.pdf
+│   │   └── Example_semester4_report_nochange_redacted.pdf
+│   │
+│   └── different_platforms/
+│       ├── Basecamp.png
+│       ├── SlackChannel.png
+│       └── Timelog.png
 │
 ├── weekly_reports_advisors_survey/
 │   └── README.md
@@ -37,10 +45,13 @@ admin-project-tracking/
 │
 └── future_work_and_initiatives/
     ├── README.md
-    ├── blocker_escalation_protocol_initiative.md
+    ├── blocker_escalation_protocol_initiative/
+    │   ├── blocker_escalation_protocol_initiative.md
+    │   ├── midterm_initiative_reflection.md
+    │   └── midterm_reflection_reflection.md
     └── weekly_reporting-workflow_clarification.md
+```
 
----
 
 ## Folder Summaries
 
@@ -54,12 +65,13 @@ Documents the structure and usage of weekly advisor surveys, including submissio
 Houses the automated progress tracking bot, which monitors GitHub milestones and issues, providing dashboards and Slack notifications for leadership and project managers.
 
 ### 4. `website_usage`
-Contains resources and documentation related to website usage metrics, monitoring workflows, and operational dashboards.
+Contains documentation on HAAG website history, governance challenges, proposed maintenance procedures, and GitHub-first website update workflows.
 
 ### 5. `future_work_and_initiatives`
 Stores ongoing and proposed initiatives to improve operational workflows. Currently includes:
 - **Structured Blocker Escalation Protocol**
 - **Weekly Reporting Workflow Clarification**
+- **GitHub-First Website Automation and Content Governance Initiative**
 
 New initiatives may be added collaboratively with students and HAAG team members.
 

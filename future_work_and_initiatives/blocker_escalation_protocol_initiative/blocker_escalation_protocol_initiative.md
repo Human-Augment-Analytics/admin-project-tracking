@@ -124,3 +124,11 @@ The Structured Blocker Escalation Protocol aims to reduce:
 - **Primary:** Advisor of R for Evolution  
 - **Secondary:** Student researchers on the team  
 - **Tertiary:** HAAG leadership interested in scalable progress tracking mechanisms  
+---
+
+## Midterm Report
+
+- [Initiative Reflection](midterm_initiative_reflection.md)
+- [Operations Reflection](midterm_operations_reflection.md)
+
+---
