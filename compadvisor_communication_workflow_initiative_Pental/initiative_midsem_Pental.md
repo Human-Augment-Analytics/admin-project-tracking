@@ -62,14 +62,15 @@ Only qualitative observations have been collected so far but I plan to collect m
 
 ```mermaid 
 flowchart TD;
-    A[Interview/Survey Computational Advisors] --> C[Collect Feedback]
-    B[Interview HAAG Admin] --> C
-    C --> D[PM Reviews Feedback + Documents]
-    D --> E[PM Updates Existing Check In Survey]
-    E --> F[PM Tests Updated Check In Survey With a Few Computational Advisors (at least 3)]
-    F --> G[PM Asks Computational Advisors For Feedback on New Survey]
-    G --> H[PM Documents All Feedback/Metrics and Sends Improved Survey to HAAG Admin]
+    A[Interview/Survey Computational Advisors] --> C[Collect Feedback];
+    B[Interview HAAG Admin] --> C;
+    C --> D[PM Reviews Feedback + Documents];
+    D --> E[PM Updates Existing Check In Survey];
+    E --> F[PM Tests Updated Check In Survey With a Few Computational Advisors (at least 3)];
+    F --> G[PM Asks Computational Advisors For Feedback on New Survey];
+    G --> H[PM Documents All Feedback/Metrics and Sends Improved Survey to HAAG Admin];
 ```
+
 
 
 ---
