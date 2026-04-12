@@ -73,7 +73,7 @@ end
 A --> L1 --> L2 --> L3 --> L4
 
 %% Highlight Intervention Layer
-style L4 fill:#ffe6e6,stroke:#cc0000,stroke-width:3px
+style L4 fill:#fff4cc,stroke:#b38f00,stroke-width:3px
 
 ```
 ---
