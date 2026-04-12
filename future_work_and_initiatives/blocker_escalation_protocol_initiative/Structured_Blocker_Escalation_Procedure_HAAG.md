@@ -33,10 +33,49 @@ This procedure applies to:
 The **R for Evolution** project served as the pilot implementation for this procedure.
 
 ---
+## 4. Where This Initiative Fits within HAAG Tracking Ecosystem
 
-## 4. Definitions
+HAAG Progress Tracking System provides strong visibility into research progress through reports, GitHub tracking, and dashboards. However, it lacked a structured mechanism to intervene when issues persist over time.
 
-### 4.1 Blocker
+This initiative functions as the **Intervention Layer** within the HAAG tracking ecosystem to address the issue of persisting blockers.
+
+```mermaid
+flowchart TB
+
+A[HAAG Progress Tracking System]
+
+subgraph L1[1. Data Collection Layer]
+direction TB
+L1a[Weekly Reports]
+L1b[Advisor Surveys]
+end
+
+subgraph L2[2. Automation Layer]
+direction TB
+L2a[GitHub Progress Bot]
+L2b[Slack Notifications]
+end
+
+subgraph L3[3. Visibility Layer]
+direction TB
+L3a[Dashboards]
+L3b[Milestones]
+end
+
+subgraph L4[4. Intervention Layer - Blocker Escalation Protocol]
+direction TB
+L4a[PM-led Operations Log]
+L4b[Structured Escalation Week 1 to Week 3]
+L4c[Ownership Assignment]
+end
+
+A --> L1 --> L2 --> L3 --> L4
+
+```
+---
+## 5. Definitions
+
+### 5.1 Blocker
 A **blocker** is any impediment that prevents meaningful progress on a task and cannot be resolved by the researcher independently.
 
 **Examples include:**
@@ -53,9 +92,9 @@ A **blocker** is any impediment that prevents meaningful progress on a task and 
 
 ---
 
-## 5. Roles and Responsibilities
+## 6. Roles and Responsibilities
 
-### 5.1 Project Manager (PM)
+### 6.1 Project Manager (PM)
 - Owns and implements the escalation procedure.
 - Reviews weekly reports and monitors project dashboards.
 - Identifies recurring blockers.
@@ -63,24 +102,24 @@ A **blocker** is any impediment that prevents meaningful progress on a task and 
 - Coordinates Week 3 escalations with faculty or relevant stakeholders.
 - Maintains the operations log and tracks outcomes.
 
-### 5.2 Student Researchers
+### 6.2 Student Researchers
 - Report blockers promptly in weekly reports and throughout the week.
 - Provide sufficient context to enable resolution.
 - Engage in discussions to identify root causes and next steps.
 - Execute agreed-upon action plans.
 
-### 5.3 Faculty Advisor / Stakeholders
+### 6.3 Faculty Advisor / Stakeholders
 - Provide guidance and decision-making support when blockers are escalated.
 - Assist in resolving dependencies, resource constraints, or scope issues.
 - Support the PM in implementing intervention strategies.
 
-### 5.4 CLEAR Advisor (Optional)
+### 6.4 CLEAR Advisor (Optional)
 - May provide technical mentorship when applicable.
 - Not responsible for managing the escalation process, which is led by the PM.
 
 ---
 
-## 6. Escalation Principles
+## 7. Escalation Principles
 
 1. **Timeliness:** Blockers should be surfaced as soon as they arise.
 2. **Accountability:** Each escalated blocker must have a clearly assigned owner.
@@ -90,7 +129,7 @@ A **blocker** is any impediment that prevents meaningful progress on a task and 
 
 ---
 
-## 7. Escalation Workflow
+## 8. Escalation Workflow
 
 The escalation process follows a time-based, three-stage model:
 
@@ -115,7 +154,7 @@ If the blocker persists into a third consecutive week:
 
 ---
 
-## 8. Escalation Channels by Blocker Type
+## 9. Escalation Channels by Blocker Type
 
 Different types of blockers may require escalation through specific channels:
 
@@ -129,7 +168,7 @@ Different types of blockers may require escalation through specific channels:
 
 ---
 
-## 9. Continuous Blocker Reporting
+## 10. Continuous Blocker Reporting
 
 To enable early intervention, researchers are encouraged to surface blockers **throughout the week**, not solely during weekly reports. Recommended communication channels include:
 
@@ -141,7 +180,7 @@ This proactive approach reduces delays and supports timely resolution.
 
 ---
 
-## 10. Documentation and Tracking
+## 11. Documentation and Tracking
 
 The following artifacts support the procedure:
 
@@ -151,7 +190,7 @@ The following artifacts support the procedure:
 
 ---
 
-## 11. Expected Outcomes
+## 12. Expected Outcomes
 
 Implementation of this procedure is expected to:
 
@@ -163,7 +202,7 @@ Implementation of this procedure is expected to:
 
 ---
 
-## 12. Pilot Insights: R for Evolution
+## 13. Pilot Insights: R for Evolution
 
 The **R for Evolution** project served as the pilot for this procedure. Key qualitative outcomes included:
 
@@ -177,7 +216,7 @@ Notably, the pilot demonstrated that the **Project Manager** is best positioned 
 
 ---
 
-## 13. Process Flow
+## 14. Process Flow
 
 The following diagram illustrates the escalation workflow:
 
@@ -226,13 +265,13 @@ flowchart TD
 
 ---
 
-## 14. Scalability Across HAAG
+## 15. Scalability Across HAAG
 
 This procedure is intentionally lightweight and tool-agnostic, enabling easy adoption across all HAAG projects regardless of team size or technical domain. Standardizing this approach promotes organizational consistency and supports effective project governance.
 
 ---
 
-## 15. Review and Continuous Improvement
+## 16. Review and Continuous Improvement
 
 The procedure should be reviewed at the end of each semester to:
 
@@ -242,7 +281,7 @@ The procedure should be reviewed at the end of each semester to:
 
 ---
 
-## 16. Version Information
+## 17. Version Information
 
 - **Version:** 1.0  
 - **Pilot Project:** R for Evolution  
@@ -252,7 +291,7 @@ The procedure should be reviewed at the end of each semester to:
 
 ---
 
-## 17. Related Documents
+## 18. Related Documents
 
 - [Blocker Escalation Implementation Guide](Blocker_Escalation_Implementation_Guide.md)
 - [R for Evolution Initiative Pilot Context Document](R_for_Evolution_Initiative_Pilot_Context.md)
