@@ -40,6 +40,7 @@ HAAG Progress Tracking System provides strong visibility into research progress 
 This initiative functions as the **Intervention Layer** within the HAAG tracking ecosystem to address the issue of persisting blockers.
 
 ```mermaid
+
 flowchart TB
 
 A[HAAG Progress Tracking System]
@@ -70,6 +71,9 @@ L4c[Ownership Assignment]
 end
 
 A --> L1 --> L2 --> L3 --> L4
+
+%% Highlight Intervention Layer
+style L4 fill:#ffe6e6,stroke:#cc0000,stroke-width:3px
 
 ```
 ---
