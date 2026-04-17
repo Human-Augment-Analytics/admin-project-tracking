@@ -1,4 +1,4 @@
-# Initiative: Structured Blocker Escalation Protocol for R for Evolution
+# R for Evolution Initiative (Pilot Context Document)
 
 ## Overview
 

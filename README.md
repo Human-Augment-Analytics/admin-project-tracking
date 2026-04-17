@@ -46,9 +46,12 @@ admin-project-tracking/
 └── future_work_and_initiatives/
     ├── README.md
     ├── blocker_escalation_protocol_initiative/
-    │   ├── blocker_escalation_protocol_initiative.md
+    │   ├── README.md
+    │   ├── Structured_Blocker_Escalation_Procedure_HAAG.md
+    │   ├── Blocker_Escalation_Implementation_Guide.md
+    │   ├── R_for_Evolution_Initiative_Pilot_Context.md
     │   ├── midterm_initiative_reflection.md
-    │   └── midterm_reflection_reflection.md
+    │   ├── midterm_operations_reflection.md
     └── weekly_reporting-workflow_clarification.md
 ```
 
