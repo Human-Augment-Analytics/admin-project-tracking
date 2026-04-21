@@ -24,11 +24,6 @@ HAAG already uses a mixed tracking environment:
 * PM synthesis for leadership-level oversight
 
 As documented in the repository:
-
-* [Progress Bot and GitHub Issue Tracking](../github_progress_bot/README.md)
-* [Future Work and Initiatives](../future_work_and_initiatives/README.md)
-* [Milestones and Larger Themes](README.md)
-
 The current challenge is not a lack of tools. The challenge is the lack of one consolidated procedural reference connecting these tools into a single weekly accountability chain for milestone- and theme-level progress.
 
 ---
@@ -325,4 +320,3 @@ By end of term, this clarified workflow should produce:
 * Earlier detection of schedule and dependency risk
 * Better alignment between weekly execution and strategic goals
 * Stronger cross-project visibility using existing GitHub-based resources
-
