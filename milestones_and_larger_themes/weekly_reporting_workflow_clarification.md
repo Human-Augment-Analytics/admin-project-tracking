@@ -213,10 +213,6 @@ This workflow explicitly uses existing GitHub tracking resources:
 2. **GitHub issues** as task-level evidence tied to milestone execution.
 3. **Progress-Tracker dashboard signals** as cross-project visibility for leadership and PM review.
 
-Reference resource: [Progress-Tracker](https://github.com/Human-Augment-Analytics/Progress-Tracker/)
-
-Local documentation reference: [github_progress_bot/README.md](../github_progress_bot/README.md)
-
 ---
 
 ## Pilot Design
