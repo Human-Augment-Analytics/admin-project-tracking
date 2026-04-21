@@ -95,13 +95,64 @@ Implementation and evaluation of this initiative will rely on:
 
 ---
 
-## Validation Strategy
+## Proposed Validation Strategy
 
 The protocol will be validated by:
 
 - Confirming that the documented workflow accurately reflects actual team practices  
 - Comparing blocker resolution timelines before and after implementation  
 - Verifying consistent adherence to the escalation steps across multiple weeks  
+
+---
+## Validation Observations (Pilot – R for Evolution)
+
+During the pilot phase, full quantitative validation was limited due to the absence of persistent multi-week blockers after implementation. However, several important observations were made.
+
+### Implementation Milestones
+
+- **Week 4:** Introduction of the weekly reports bot, which parsed submissions and posted structured summaries in the project channel  
+- **Week 10:** Introduction of the Structured Blocker Escalation Protocol  
+
+### Blocker Trends Over Time
+
+| Week | Number of Blockers |
+|------|-------------------|
+| 3    | 0                 |
+| 4    | 1                 |
+| 5    | 3                 |
+| 6    | 1                 |
+| 7    | 4                 |
+| 8    | 3                 |
+| 9    | 2                 |
+| 10   | 0 *(Protocol Introduced)* |
+| 11   | 0                 |
+| 12   | 1                 |
+| 13   | 3                 |
+| 14   | 0                 |
+
+### Key Observations
+
+- Blockers were present and fluctuated in the early and mid-semester period  
+- Following improvements in reporting visibility (Week 4) and process clarity, blocker counts showed a general reduction  
+- After the introduction of the escalation protocol (Week 10), **no persistent multi-week blockers were observed**, limiting the ability to test escalation triggers directly  
+
+### Interpretation
+
+While the absence of recurring blockers limited direct validation of escalation steps (Week 2 / Week 3), it suggests that:
+
+- Increased visibility and accountability may have contributed to **earlier resolution of issues**  
+- Clearer expectations around reporting and communication reduced the likelihood of blockers persisting across weeks  
+- The presence of a structured escalation framework may have had a **preventative effect**, even when not explicitly triggered  
+
+### Limitations
+
+- No sufficient instances of multi-week blockers to fully validate escalation behavior  
+- Reliance on manual observation rather than structured historical data comparison  
+- External factors (process improvements, increased engagement) may have influenced results  
+
+### Conclusion
+
+Although full validation of escalation mechanics was not achieved, the pilot indicates that the introduction of structure, visibility, and accountability mechanisms contributes to smoother workflows and reduced blocker persistence. Further validation is recommended in future iterations with more controlled tracking of blocker recurrence.
 
 ---
 
