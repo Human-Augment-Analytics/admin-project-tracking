@@ -30,7 +30,7 @@ Milestones and Larger Themes Weekly Reporting Workflow Clarification Procedure
 To provide a reproducible, low-overhead procedure that standardizes weekly milestone reporting, theme alignment, and escalation behavior across HAAG teams.
 
 ### Procedure Link
-[weekly_reporting_workflow_clarification.md](/Users/drake/Documents/GitHub/admin-project-tracking/milestones_and_larger_themes/weekly_reporting_workflow_clarification.md)
+[milestones_and_larger_themes_workflow_clarification_initiative.md](/Users/drake/Documents/GitHub/admin-project-tracking/milestones_and_larger_themes/milestones_and_larger_themes_workflow_clarification_initiative.md)
 
 ---
 
