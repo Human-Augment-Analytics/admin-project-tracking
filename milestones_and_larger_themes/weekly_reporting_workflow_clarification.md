@@ -1,5 +1,58 @@
 # Milestones and Larger Themes Weekly Reporting Workflow Clarification Initiative
 
+## Final Submission Scope (1-2 Paragraphs)
+
+This initiative defines a practical weekly reporting clarification process for the **Milestones and Larger Themes** project area in HAAG. The scope is to standardize how milestone progress is documented, reviewed, and escalated so that weekly updates are decision-useful, comparable across teams, and clearly tied to larger strategic themes. The initiative does not create a new reporting platform; it clarifies how existing Slack and GitHub workflows should be used with a shared structure.
+
+The initiative specifically addresses workflow ambiguity around milestone status interpretation, milestone-to-theme alignment, and escalation timing for at-risk work. It introduces minimum required reporting fields, PM quality checks, and monthly theme-level review so progress is visible at both execution and strategy levels. The expected result is earlier risk detection, clearer ownership, and stronger alignment between day-to-day work and HAAG’s broader research objectives.
+
+---
+
+## Evidence of Alignment with HAAG Goals
+
+Evidence that this initiative aligns with HAAG goals comes from repository-grounded observations and operational feedback patterns:
+
+* Existing HAAG documentation emphasizes visibility, consistency, and early intervention in progress tracking workflows.
+* Weekly reporting and PM synthesis are already core mechanisms in HAAG operations; this initiative improves clarity within that existing structure rather than replacing it.
+* Cross-project tracking expectations in HAAG require milestone-level comparability and clearer accountability chains, which this procedure directly supports.
+* Midterm reflection and operations reflection artifacts for this initiative identified recurring issues in status consistency, evidence quality, and strategic continuity, which this procedure addresses with explicit fields and review cadence.
+
+These observations indicate strong alignment with HAAG goals of transparent progress monitoring, reduced ambiguity in project oversight, and earlier intervention on delivery risk.
+
+---
+
+## Procedure(s) Generated and Purpose
+
+### Procedure Title
+Milestones and Larger Themes Weekly Reporting Workflow Clarification Procedure
+
+### Purpose
+To provide a reproducible, low-overhead procedure that standardizes weekly milestone reporting, theme alignment, and escalation behavior across HAAG teams.
+
+### Procedure Link
+[weekly_reporting_workflow_clarification.md](/Users/drake/Documents/GitHub/admin-project-tracking/milestones_and_larger_themes/weekly_reporting_workflow_clarification.md)
+
+---
+
+## Rubric Fit Summary
+
+### Intended Audience
+Clearly defined for Project Managers, student researchers, computational advisors, and leadership in the Roles and Stakeholders sections.
+
+### Appropriate Detail Level
+Includes minimum reporting schema, status definitions, role-specific responsibilities, escalation conditions, pilot phases, and measurement criteria.
+
+### Reproducibility Without Outside Context
+The workflow defines step-by-step weekly and monthly operations, required fields, acceptance checks, escalation outputs, and evaluation criteria so teams can execute the process directly.
+
+### Realistic Effort for Audience
+The procedure is designed as a lightweight clarification layer over existing channels and tools; it does not require new infrastructure and uses concise update requirements.
+
+### Integration and Enforcement in HAAG Structure
+Integration occurs through existing weekly reporting channels, PM review cadence, and advisor/leadership visibility points. Enforcement is built through required fields, validation checks, and explicit escalation triggers.
+
+---
+
 ## Purpose
 
 This initiative defines a standardized, end-to-end weekly reporting procedure for the **Milestones and Larger Themes** workflow in HAAG.
