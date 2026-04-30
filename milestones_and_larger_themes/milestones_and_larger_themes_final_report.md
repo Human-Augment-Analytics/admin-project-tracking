@@ -8,17 +8,17 @@
 
 ## 1. Initiative Scope
 
-This initiative creates a standardized milestone-and-theme reporting structure for HAAG project teams. Its focus is not general progress tracking, but a narrower operational problem: weekly updates often show that work is happening without clearly showing whether a specific milestone is advancing or whether that milestone still supports the project's larger direction. The procedure therefore makes milestones the primary unit of weekly review and requires every active milestone to be mapped to a larger theme that explains its strategic purpose.
+This initiative creates a milestone-and-theme reporting structure for HAAG project teams that is meant to answer a more specific question than ordinary progress tracking: is the team still moving the right milestone forward for the right reason? In the current environment, weekly updates can capture effort, meetings, coding activity, and blockers, but that does not always make it obvious whether a milestone is actually moving or whether the work still supports the broader direction the project is supposed to be following. This procedure therefore treats milestones as the main unit of weekly review and requires each active milestone to be attached to a larger theme that gives the work a strategic frame.
 
-The intended audience is primarily HAAG Project Managers, with student researchers providing milestone updates and computational advisors participating in theme-level review. The procedure is designed to fit existing Slack and GitHub practices rather than adding a separate platform or heavy administrative layer. Its scope is to reduce milestone drift, improve strategic continuity across weeks, and make it easier for PMs to identify when active work has stopped moving the team toward its larger themes.
+The intended audience is primarily HAAG Project Managers, with student researchers contributing milestone updates and computational advisors participating in periodic theme review. The procedure is designed to sit inside the workflows HAAG teams already use rather than introducing another system to maintain. Its scope is to reduce milestone drift, preserve strategic continuity when projects pivot or slow down, and give PMs a more disciplined way to separate meaningful progress from activity that looks busy but does not clearly move a theme forward.
 
 ---
 
 ## 2. Evidence of Alignment with HAAG's Goals
 
-This initiative aligns with HAAG's goals because the repository's existing reporting and operations materials consistently prioritize progress visibility, timely intervention, and clearer coordination across teams. Weekly reporting, PM synthesis, GitHub milestone usage, and leadership review already exist in HAAG's structure, but they do not by themselves guarantee that a weekly update will reveal whether a milestone is slipping or whether a team's current activity still supports the right project theme.
+This initiative aligns with HAAG's goals because the repository's existing reporting and operations materials consistently prioritize progress visibility, timely intervention, and clearer coordination across teams. Weekly reporting, PM synthesis, GitHub milestone usage, and leadership review already exist in HAAG's structure, but those mechanisms do not automatically reveal when a milestone is slipping quietly or when a team is spending energy on work that no longer supports the strongest theme in the project.
 
-Observations from the milestone-and-theme work in this repository repeatedly pointed to the same gap: status language was inconsistent, proof of completion was uneven, and strategic continuity across multiple weeks was harder to read than raw activity. A team could appear productive while a milestone quietly drifted or while a larger theme went under-supported. This procedure addresses that gap directly by requiring milestone-to-theme mapping, shared status definitions, and recurring theme review, which supports HAAG's goal of making project oversight more interpretable and more actionable.
+Observations from the milestone-and-theme work in this repository repeatedly pointed to the same gap: status language was inconsistent, proof of completion was uneven, and continuity across multiple weeks was harder to read than raw activity. A team could look productive while one important milestone drifted or while one larger theme received less support than the project actually needed. This procedure addresses that gap directly by requiring milestone-to-theme mapping, shared status definitions, and recurring theme review, which supports HAAG's goal of making project oversight more interpretable and more actionable.
 
 ### Why Milestone-to-Theme Mapping Matters in This Project
 
@@ -388,34 +388,6 @@ Track the following indicators over time:
 | Monthly theme review completed | Continuity of strategic oversight |
 
 These measures are intended to show whether the procedure improves clarity without creating unnecessary overhead.
-
----
-
-## Quick Reference: PM Checklist
-
-### Initial Setup
-
-- [ ] Define active larger themes
-- [ ] Define active milestones and assign owners
-- [ ] Link every milestone to one larger theme
-- [ ] Share required reporting fields and status definitions
-- [ ] Confirm weekly and monthly review cadence
-
-### Every Week
-
-- [ ] Review milestone updates for completeness
-- [ ] Validate status label usage
-- [ ] Request clarification where needed
-- [ ] Check evidence for completed milestones
-- [ ] Identify and record at-risk milestones
-- [ ] Summarize milestone and theme movement
-
-### Every Month
-
-- [ ] Review larger themes with advisor
-- [ ] Check whether milestones are still strategically aligned
-- [ ] Document roadmap adjustments
-- [ ] Reassess whether any theme is under-supported or stalled
 
 ---
 
