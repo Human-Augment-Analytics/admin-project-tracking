@@ -1,4 +1,4 @@
-# Standard Operating Procedure: Milestones and Larger Themes Workflow Clarification
+# Standard Operating Procedure: Milestones and Larger Themes
 
 **Document Type:** Standard Operating Procedure (SOP)  
 **Intended Audience:** Project Managers at HAAG  
@@ -9,15 +9,15 @@
 
 ## Purpose
 
-This SOP gives Project Managers a step-by-step process for running milestone-centered weekly reporting in HAAG. The procedure is designed to make milestone status, delivery risk, and strategic alignment easier to interpret across teams. The system does not replace existing reporting channels. Instead, it clarifies how to use existing Slack and GitHub workflows with a shared structure.
+This SOP gives HAAG Project Managers a step-by-step process for running milestone-centered weekly reporting and larger-theme review. The procedure is designed to help PMs read research progress in a more disciplined way by distinguishing milestone movement from general activity and by linking each milestone to a larger theme that explains why it matters. It does not replace current reporting channels. Instead, it clarifies how existing Slack updates, GitHub milestone artifacts, and PM review habits should work together.
 
 ---
 
 ## Background
 
-HAAG teams already report progress regularly, but reporting quality can vary from team to team. Some updates focus heavily on what individual researchers did without making it clear whether a milestone actually moved forward. In other cases, milestones are mentioned, but the status terms are inconsistent, evidence of completion is weak, or the milestone is not clearly tied to the larger direction of the project.
+HAAG teams already report progress regularly, but the reporting signal is uneven. In many cases, a weekly update shows that a researcher read papers, edited code, met with the team, or worked through a blocker, but it does not clearly show whether a milestone advanced. In other cases, milestones are mentioned, but status terms shift between weeks, completion evidence is thin, or the milestone is not clearly tied to the broader purpose of the project.
 
-This procedure addresses that gap by defining milestones as the primary unit of weekly operational reporting and larger themes as the primary unit of monthly strategic review. The goal is to create a workflow where PMs can interpret progress faster, identify risk earlier, and explain project direction more clearly to advisors and leadership.
+This matters in HAAG because research projects often change shape as new findings emerge, papers get reprioritized, and experimental work produces results that change what the team should do next. Without a stable milestone-to-theme structure, active work can continue while strategic continuity degrades. This procedure addresses that gap by defining milestones as the primary unit of weekly operational reporting and larger themes as the primary unit of monthly strategic review. The goal is to create a workflow where PMs can identify milestone drift earlier, determine whether the current work still supports the right theme, and explain project direction more clearly to advisors and leadership.
 
 ---
 
@@ -43,6 +43,8 @@ Examples:
 * model reliability and evaluation
 * data pipeline stabilization
 
+In HAAG terms, a larger theme is the bridge between short-term research deliverables and the broader objective the team is expected to reach by the end of a semester, sprint, or submission cycle.
+
 ### Core Principle
 
 Weekly reporting should answer two questions:
@@ -50,7 +52,7 @@ Weekly reporting should answer two questions:
 1. Did a milestone move?
 2. If so, did that movement advance a larger theme?
 
-The procedure is meant to keep reporting focused on progress quality and direction, not just activity volume.
+The procedure is meant to keep reporting focused on progress quality and direction, not just activity volume. In practice, this means a PM should be able to distinguish between a busy week and a meaningful week.
 
 ---
 
@@ -60,7 +62,9 @@ This procedure assumes the team already uses the following:
 
 * Slack project channels for weekly communication
 * GitHub issues and milestones for technical coordination, where applicable
-* Existing PM review or team sync cadence
+* Existing PM review, advisor check-in, or team sync cadence
+
+In most HAAG teams, this means the PM reads weekly updates from the project Slack channel, references GitHub artifacts where they exist, and uses the team's standing syncs to resolve confusion, review at-risk milestones, and confirm whether current work still aligns with the larger themes.
 
 No new tool is required. The PM uses the current reporting channel and any existing GitHub artifacts to validate milestone movement and completion evidence.
 
@@ -100,6 +104,22 @@ The following field is required for completed work:
 * `completion_evidence`
 
 These fields keep updates brief while ensuring the PM has enough information to make a judgment without relying on outside assumptions.
+
+The point of this structure is not to force polished writing. It is to make the update legible enough that a PM can quickly see whether the milestone advanced, stalled, or drifted away from the theme it was supposed to support.
+
+Recommended Slack post format:
+
+```text
+Milestone: [title]
+Owner: [name]
+Status: [Not Started / In Progress / At Risk / Complete]
+Due: [date or target week]
+Theme: [larger theme]
+Progress: [1-2 sentence update]
+Risk/Dependency: [if applicable]
+Next Action: [next step]
+Evidence: [only if Complete]
+```
 
 ---
 
@@ -148,6 +168,8 @@ Each milestone must have:
 
 If a milestone cannot be linked to a larger theme, the PM should ask whether the milestone is actually necessary or whether the theme framework needs revision.
 
+This is the main filtering step in the procedure. If a milestone cannot be mapped cleanly, it may be evidence that the milestone is too vague, too tactical, or disconnected from the current project direction.
+
 #### Step 3: Communicate the Reporting Standard
 
 Share the required reporting fields and status definitions with the team.
@@ -161,11 +183,14 @@ Make clear that:
 
 Researchers should understand that the PM is not asking for longer reports. The goal is higher clarity with minimal added writing.
 
+This is especially important in HAAG because many teams are already balancing research work, meetings, manuscript preparation, and technical iteration. The procedure should sharpen interpretation, not create another administrative task.
+
 #### Step 4: Establish Review Cadence
 
 Confirm the following cadence:
 
 * weekly milestone update review by the PM
+* weekly or bi-weekly use of those milestone updates in existing team syncs
 * monthly larger-theme review with the PM and advisor
 
 This cadence should be integrated into the team's existing meeting structure where possible.
@@ -203,6 +228,12 @@ The PM checks whether the milestone update:
 
 If the update is incomplete or ambiguous, the PM marks it as needing clarification and follows up in the same weekly cycle.
 
+Examples of clarification triggers:
+
+* milestone says `In Progress` for multiple weeks with no concrete movement
+* milestone is marked `Complete` but no artifact, PR, note, or demo is referenced
+* milestone update describes work that does not clearly connect to the named larger theme
+
 #### Step 4: PM Validates Against Existing Work Evidence
 
 Where GitHub issues, pull requests, documents, or demos exist, the PM performs a lightweight validation check to confirm that the reported milestone movement is supported by actual work artifacts.
@@ -220,6 +251,14 @@ At the end of weekly review, the PM should be able to summarize:
 * what intervention is needed before the next cycle
 
 This summary can be used in team syncs, advisor check-ins, or higher-level project oversight.
+
+For HAAG, a useful weekly summary is usually short. It should help someone outside the immediate task context understand:
+
+* which milestone advanced
+* where drift is emerging
+* whether the right larger themes are receiving attention
+
+If the PM cannot produce that summary clearly, the reporting quality is probably still too loose.
 
 ---
 
@@ -243,6 +282,8 @@ When escalation is needed, the PM records:
 
 Escalation should happen inside the team's existing decision-making structure. The PM does not need to invent a separate bureaucracy for this.
 
+If the project already uses another HAAG escalation pattern, this procedure should feed into that process rather than compete with it.
+
 ---
 
 ### Phase 4: Monthly Larger-Theme Review
@@ -261,6 +302,17 @@ The output should be one short note per project documenting any strategic adjust
 
 This is the point where the procedure moves beyond task tracking and becomes a strategic planning tool.
 
+Suggested output format:
+
+```text
+Theme Review Note
+Project: [name]
+Theme: [theme name]
+Status: [advancing / stalled / needs revision]
+Evidence: [milestones that moved or failed to move]
+Adjustment: [reprioritize, rescope, add support, no change]
+```
+
 ---
 
 ## Integration with HAAG's Existing Structure
@@ -273,6 +325,8 @@ This procedure is designed to fit HAAG's current operations:
 * Advisors can participate at the larger-theme review stage without needing to manage weekly operations directly.
 
 The procedure integrates through existing cadence rather than by requiring a new platform or new recurring meeting.
+
+This is especially important for HAAG because researchers are already balancing experimental work, paper writing, code maintenance, and meetings. The procedure only works if it improves interpretation without substantially increasing reporting overhead.
 
 ---
 
@@ -303,34 +357,6 @@ Track the following indicators over time:
 | Monthly theme review completed | Continuity of strategic oversight |
 
 These measures are intended to show whether the procedure improves clarity without creating unnecessary overhead.
-
----
-
-## Quick Reference: PM Checklist
-
-### Initial Setup
-
-- [ ] Define active larger themes
-- [ ] Define active milestones and assign owners
-- [ ] Link every milestone to one larger theme
-- [ ] Share required reporting fields and status definitions
-- [ ] Confirm weekly and monthly review cadence
-
-### Every Week
-
-- [ ] Review milestone updates for completeness
-- [ ] Validate status label usage
-- [ ] Request clarification where needed
-- [ ] Check evidence for completed milestones
-- [ ] Identify and record at-risk milestones
-- [ ] Summarize milestone and theme movement
-
-### Every Month
-
-- [ ] Review larger themes with advisor
-- [ ] Check whether milestones are still strategically aligned
-- [ ] Document roadmap adjustments
-- [ ] Reassess whether any theme is under-supported or stalled
 
 ---
 
