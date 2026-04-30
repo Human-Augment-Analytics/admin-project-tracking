@@ -1,6 +1,6 @@
 # Management & Leadership in CS - Final Written Report
 
-## Initiative: Milestones and Larger Themes Workflow Clarification
+## Initiative: Milestones and Larger Themes
 
 ### Scope
 
@@ -16,6 +16,6 @@ Observations documented throughout this project showed repeated issues with inco
 
 ### Procedures Generated
 
-This report contains one procedure: the **Milestones and Larger Themes Workflow Clarification Standard Operating Procedure**. The purpose of this SOP is to give any HAAG Project Manager a complete, reproducible guide for running weekly milestone reporting and monthly larger-theme review inside existing team workflows. It defines the required reporting fields, role responsibilities, review cadence, escalation rules, integration with GitHub milestone work, and success metrics.
+This report contains one procedure: the **Milestones and Larger Themes Standard Operating Procedure**. The purpose of this SOP is to give any HAAG Project Manager a complete, reproducible guide for running weekly milestone reporting and monthly larger-theme review inside existing team workflows. It defines the required reporting fields, role responsibilities, review cadence, escalation rules, integration with GitHub milestone work, and success metrics.
 
-Procedure link: [milestones_and_larger_themes_workflow_clarification_sop.md](/Users/drake/Documents/GitHub/admin-project-tracking/milestones_and_larger_themes/milestones_and_larger_themes_workflow_clarification_sop.md)
+Procedure link: [milestones_and_larger_themes_sop.md](/Users/drake/Documents/GitHub/admin-project-tracking/milestones_and_larger_themes/milestones_and_larger_themes_sop.md)

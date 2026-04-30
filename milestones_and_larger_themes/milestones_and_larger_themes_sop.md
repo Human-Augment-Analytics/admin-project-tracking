@@ -1,4 +1,4 @@
-# Standard Operating Procedure: Milestones and Larger Themes Workflow Clarification
+# Standard Operating Procedure: Milestones and Larger Themes
 
 **Document Type:** Standard Operating Procedure (SOP)  
 **Intended Audience:** Project Managers at HAAG  
